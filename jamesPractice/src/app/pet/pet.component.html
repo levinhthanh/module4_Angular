@@ -1,12 +1,12 @@
 <h2>Pet profile</h2>
 <label>
     Pet name:
-    <input type="text" (change)="updateName($event.target.value)">
+    <input class="form-control ml-5" type="text" (change)="updateName($event.target.value)">
 </label>
 <br >
 <label>
     Pet image:
-    <input type="url" (change)="updateImage($event.target.value)">
+    <input class="form-control ml-5" type="url" (change)="updateImage($event.target.value)">
 </label>
 <br >
 <h3>Pet name: {{petName}}</h3>

@@ -1,0 +1,38 @@
+<br><br><br><br><br>
+
+
+<div class="">
+  <div class="container">
+    <p class="h1 text-success">MÁY TÍNH ĐƠN GIẢN</p>
+    <p class="h1 text-center">{{show}}</p>
+  </div>
+  <br>
+  <div class="container">
+    <table class="container">
+      <tr class="row mb-3">
+        <td class="col-3"><input (click)="putNumber(1)" class="btn btn-warning w-100" type="button" value="1"></td>
+        <td class="col-3"><input (click)="putNumber(2)" class="btn btn-warning w-100" type="button" value="2"></td>
+        <td class="col-3"><input (click)="putNumber(3)" class="btn btn-warning w-100" type="button" value="3"></td>
+        <td class="col-3"><input (click)="add()" class="btn btn-success w-100" type="button" value="+"></td>
+      </tr>
+      <tr class="row mb-3">
+        <td class="col-3"><input (click)="putNumber(4)" class="btn btn-warning w-100" type="button" value="4"></td>
+        <td class="col-3"><input (click)="putNumber(5)" class="btn btn-warning w-100" type="button" value="5"></td>
+        <td class="col-3"><input (click)="putNumber(6)" class="btn btn-warning w-100" type="button" value="6"></td>
+        <td class="col-3"><input (click)="sub()" class="btn btn-success w-100" type="button" value="-"></td>
+      </tr>
+      <tr class="row mb-3">
+        <td class="col-3"><input (click)="putNumber(7)" class="btn btn-warning w-100" type="button" value="7"></td>
+        <td class="col-3"><input (click)="putNumber(8)" class="btn btn-warning w-100" type="button" value="8"></td>
+        <td class="col-3"><input (click)="putNumber(9)" class="btn btn-warning w-100" type="button" value="9"></td>
+        <td class="col-3"><input (click)="mul()" class="btn btn-success w-100" type="button" value="*"></td>
+      </tr>
+      <tr class="row mb-3">
+        <td class="col-3"><input (click)="putNumber(0)" class="btn btn-warning w-100" type="button" value="0"></td>
+        <td class="col-3"><input (click)="reset()" class="btn btn-warning w-100" type="button" value="C"></td>
+        <td class="col-3"><input (click)="cal()" class="btn btn-danger w-100" type="button" value="="></td>
+        <td class="col-3"><input (click)="div()" class="btn btn-success w-100" type="button" value="/"></td>
+      </tr>
+    </table>
+  </div>
+</div>
