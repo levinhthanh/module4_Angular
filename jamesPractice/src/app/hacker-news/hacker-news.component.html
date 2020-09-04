@@ -1,0 +1,52 @@
+<h2 class="h1 text-center">Today's article</h2>
+<hr>
+
+<div class="container text-center" *ngFor="let art of articles">
+  <a href="{{art.url}}" target="_blank">{{art.title}}</a>
+  <app-likes></app-likes>
+</div>
+<div class="container text-center mt-2">
+  <button class="btn btn-primary" *ngIf="!add_article" (click)="showAdd()" >Thêm mới</button>
+</div>
+
+<hr>
+<div class="container text-center mt-2" *ngIf="add_article">
+  <h2 class="h4 text-center">Thêm mới một liên kết bài viết:</h2>
+  <textarea class="form-control mb-2" [(ngModel)]="title" cols="70" id="article-title"></textarea>
+  <textarea class="form-control mb-2" [(ngModel)]="url" cols="70" id="article-url"></textarea>
+  <input class="btn btn-warning" type="button" value="Thêm mới" (click)="addArticle()">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- HIỂN THỊ VÀ UPDATE 1 ARTICAL -->
+<!-- <div class="container text-center">
+  <a href="{{article.url}}" target="_blank">{{article.title}}</a>
+</div> -->
+<!--
+  <div class="container">
+  <textarea class="form-control mb-2" [value]="article.title" cols="70" id="article-title"></textarea>
+  <textarea class="form-control mb-2" [value]="article.url" cols="70" id="article-url"></textarea>
+  <input class="btn btn-warning" (click)="updateArticle()" type="button" value="Update">
+
+  <textarea class="form-control mb-2" [(ngModel)]="article.title" cols="70"></textarea>
+  <textarea class="form-control mb-2" [(ngModel)]="article.url" cols="70"></textarea>
+</div> -->
