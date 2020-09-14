@@ -9,6 +9,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { HackerNewsComponent } from './hacker-news/hacker-news.component';
 import { FormsModule } from '@angular/forms';
 import { LikesComponent } from './likes/likes.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LikesComponent } from './likes/likes.component';
     PetComponent,
     CalculatorComponent,
     HackerNewsComponent,
-    LikesComponent
+    LikesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

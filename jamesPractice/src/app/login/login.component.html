@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <p class="h1" id="titleLogin">FORM LOGIN OF PAGE </p>
+
+  <div class="login">
+    <form #loginForm="ngForm" (submit)="checkLogin(loginForm)">
+      <div class="userNameCover">
+        <label for="userName" class="text-light">User Name:</label>
+        <input ngModel name="userInput" #userInput="ngModel" required type="text" id="userName" class="row w-100 forrm-control">
+        <i class="fas fa-user-alt" id="iconUser"></i>
+      </div>
+      <div *ngIf="!userInput.value && userInput.touched" class="userNameCover alert alert-danger" role="alert">
+        <p *ngIf="!userInput?.errors?.required">Bạn chưa nhập tài khoản!</p>
+      </div>
+      <div class="passwordCover">
+        <label for="password" class="text-light">Password:</label>
+        <input ngModel name="passwordInput" #passwordInput="ngModel" required type="password" id="password" class="row w-100 forrm-control">
+        <i class="fas fa-unlock-alt" id="iconPassword"></i>
+      </div>
+      <div class="actions">
+        <label for="registerAction" class="text-light">New user ? </label>
+        <a id="registerAction" href="">Register here </a><br>
+        <label for="registerAction" class="text-light">Forgot password ? </label>
+        <a id="registerAction" href="">Click here </a>
+      </div>
+
+      <input type="submit" class="btn" id="buttonLogin" value="Login">
+    </form>
+
+    <div class="row othersLogin">
+      <span class="text-light">Or login with</span>
+      <i class="fab fa-facebook-square ml-1 mr-1" id="iconFacebook"></i>
+      <i class="fab fa-twitter-square mr-1" id="iconTwitter"></i>
+      <i class="fab fa-instagram-square" id="iconInstagram"></i>
+    </div>
+  </div>
+
+</div>
